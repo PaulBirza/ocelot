@@ -35,5 +35,5 @@ gulp.task('compass', function (done) {
 
 // gulp.task('all', ['js', 'compass']);
 
-gulp.task('all', gulp.parallel('js', 'compass'));
+gulp.task('default', gulp.parallel('js', 'compass'));
 
