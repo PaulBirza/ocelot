@@ -1,0 +1,42 @@
+.header-area {
+	min-height: 700px;
+	color: #fff;
+	padding-top: 15em;
+	sup {
+		font-size: 30%;
+		top: -1.75em;
+	}
+	h2, p {
+		text-align: center;
+	}
+	h2 {
+		font-size: 36pt !important;
+		color: #fff;
+		font-weight: 300;
+		margin: 1em 0 0.75em;
+	}
+	p {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.centered {
+	.buttons-row {
+		.callout {
+			display: inline;
+		}
+	}
+}
+
+a.anchor {
+	display: block;
+	position: relative;
+	top: -90px;
+	visibility: hidden;
+}
+
+.errormsg a {
+	display: none;
+}
+//

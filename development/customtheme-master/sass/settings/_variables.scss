@@ -1,0 +1,49 @@
+// font families
+$font-heading: 'Helvetica Regular', Helvetica, Arial, sans-serif;
+
+// $font-body: 'Helvetica Regular', Helvetica, Arial, sans-serif;
+$font-body: 'Ocelot', Helvetica, Arial, sans-serif;
+
+
+
+$font-body-bold: 'Helvetica Regular', Helvetica, Arial, sans-serif;
+
+// form inputs
+$input-text: #fff;
+$input-background: #000;
+
+// ****************************
+// Responsive Breakpoints
+// ****************************
+
+// bootstrap breakpoints
+$large: 1200px; // large desktop
+$medium: 992px; // small desktop
+$small: 768px; // ipad portrait
+
+// ipad
+$ipadlandscape: 1024px;
+
+// iphone 6 plus
+$iphone6plusportrait: 414px;
+$iphone6pluslandscape: 736px;
+
+// iphone 6
+$iphone6portrait: 375px;
+$iphone6landscape: 667px;
+
+// iphone 5, 5S, 5C
+$iphone5landscape: 568px;
+
+// iphone 3, 3G, 4, 4S
+$iphoneportrait: 320px;
+$iphonelandscape: 480px;
+
+// android
+$androidportrait: 360px;
+$androidlandscape: 640px;
+
+$off-white: #F3F3F2;
+$black: #34292C;
+$dark-gray:#525257;
+$light-gray:#D1D1D1;

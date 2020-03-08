@@ -1,0 +1,29 @@
+// Sass Template
+// @version 1.0
+// @author  Paul Birza
+
+// settings
+@import "settings/themeinfo";
+@import url("//hello.myfonts.net/count/2eea6e");
+@import "settings/template";
+@import "settings/variables";
+@import "settings/mixins";
+@import "settings/fonts";
+
+
+// framework
+@import "framework/bootstrap";
+
+// layout
+@import "partials/layout";
+@import "partials/responsive";
+@import "partials/header";
+@import "partials/footer";
+
+// pages
+@import "partials/global";
+@import "partials/home";
+
+
+// sticky footer, must be last
+@import "partials/stickyfooter";

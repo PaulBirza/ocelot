@@ -1,0 +1,97 @@
+// **************************
+// Above
+// **************************
+
+/* 1200 and above - large desktop */
+@include bp($large) {
+
+}
+
+/* 1024px and above - ipad - landscape mode */
+@include bp($ipadlandscape) {
+
+}
+
+/* 992px and above - small desktop */
+@include bp($medium) {
+
+}
+
+/* 768px and above - ipad - portrait mode */
+@include bp($small) {
+
+}
+
+/* 736px and above - iphone 6 plus - landscape mode */
+@include bp($iphone6pluslandscape) {
+
+}
+
+/* 414px and above - iphone 6 plus - portrait mode */
+@include bp($iphone6plusportrait) {
+
+}
+
+/* 667px and above - iphone 6 - landscape mode */
+@include bp($iphone6landscape) {
+
+}
+
+/* 640px and above - android - landscape mode */
+@include bp($androidlandscape) {
+
+}
+
+/* 568px and above - iphone 5, 5S, 5C - landscape mode */
+@include bp($iphone5landscape) {
+
+}
+
+/* 480px and above - iphone 3, 3G, 4, 4S - landscape mode */
+@include bp($iphonelandscape) {
+
+}
+
+/* 375px and above - iphone 6 - portrait mode */
+@include bp($iphone6portrait) {
+
+}
+
+/* 360px and above - android - portrait mode */
+@include bp($androidportrait) {
+
+}
+
+/* 320px and above - iphone 3, 3G, 4, 4S, 5, 5S, 5C - portrait mode */
+@include bp($iphoneportrait) {
+
+}
+
+// **************************
+// Below
+// **************************
+
+/* 1199 and below */
+@include bp($max: #{$large - 1}) {
+
+}
+
+/* 991px and below */
+@include bp($max: #{$medium - 1}) {
+
+}
+
+/* 767px and below */
+@include bp($max: #{$small - 1}) {
+
+}
+
+// /* 479px and below */
+// @include bp($max: #{$iphonelandscape - 1}) {
+
+// }
+
+// /* 319px and below */
+// @include bp($max: #{$iphoneportrait - 1}) {
+
+// }

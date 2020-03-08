@@ -1,0 +1,31 @@
+// ************************************************************
+// Font includes
+// ************************************************************
+
+@font-face {
+    font-family: 'Helvetica Bold';
+    src: url('fonts/HelveticaNeue-Bold.eot'),
+        url('fonts/HelveticaNeue-Bold.woff') format('woff'),
+        url('fonts/HelveticaNeue-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Regular';
+    src: url('fonts/HelveticaNeue-Roman.eot');
+    src: url('fonts/HelveticaNeue-Roman.eot?#iefix') format('embedded-opentype'),
+        url('fonts/HelveticaNeue-Roman.woff') format('woff'),
+        url('fonts/HelveticaNeue-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Merriweather Regular';
+    src: url('fonts/Merriweather-Regular.woff2') format('woff2'),
+        url('fonts/Merriweather-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

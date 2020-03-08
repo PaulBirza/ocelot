@@ -1,0 +1,32 @@
+# git ignore
+_offline
+.htaccess
+template-bootstrap-*
+css/main.min.css.map
+
+# Prepros
+prepros.cfg
+
+# Vafpress
+vafpress/
+vafpress-framework/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+sftp-config.json
+sftp-config-*.json
+
+# Netbeans
+nbproject
+
+# Linux OS
+.swp.*
+
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes

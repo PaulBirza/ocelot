@@ -1,0 +1,665 @@
+// ************************************************************
+// Responsive
+// ************************************************************
+
+/* 1200px or larger
+-------------------------------------------------- */
+@include bp($large) {
+
+	.navbar-form {
+		width: auto !important;
+	}
+	.content-blog .blog-post-thumbnail {
+		margin-right: 1em;
+		float: left;
+	}
+
+	.content-blog .blog-post-content {
+		float: left;
+		clear: none;
+		width: 70%;
+	}
+
+	.content-blog .blog-post-content h3 {
+		margin-top: 0;
+	}
+
+	.content-blog .pagination-container {
+		width: 100%;
+		float: right;
+	}
+
+	article.type-post .entry-content img.attachment-post-thumbnail {
+		float: left;
+		clear: none;
+		margin-right: 1em;
+		margin-bottom: 1em;
+	}
+}
+
+/* 992px or larger
+-------------------------------------------------- */
+@include bp($medium) {
+	#primary,
+	#secondary {
+	  // margin-bottom: 1em !important;
+	}
+	/* careers */
+	.careers-culture .btn-default-dark {
+		margin-bottom: 20px !important;
+	}
+
+}
+
+/* 768px or larger
+-------------------------------------------------- */
+@include bp($small) {
+	#main {
+		display: table;
+	}
+
+	.navbar-nav.navbar-right:last-child {
+		margin-right: 0;
+	}
+
+	.navbar-form {
+		float: right !important;
+		clear: none;
+		position: relative;
+		display: inline-block;
+		width: 22.5%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.widget {
+		margin: 2em 0 1.5em;
+	}
+
+	.container .jumbotron,
+	#primary > .well,
+	#secondary > .well {
+		margin-top: 1em;
+	}
+
+	.well {
+		margin-bottom: 1em;
+	}
+
+	.container .jumbotron {
+		margin-bottom: 1em;
+	}
+
+	.hentry {
+		margin: 0;
+	}
+
+	.entry-content {
+		margin-top: 1em;
+	}
+
+	#footer-widgets {
+		margin-bottom: 1em;
+	}
+
+	#footer-sidebar4 .well {
+		margin-bottom: 2em !important;
+	}
+}
+
+/* 1199px or smaller
+-------------------------------------------------- */
+// @include bp($max: #{$large - 1}) {
+//     #testimonials-header-container {
+//         .testimonial-text {
+//             margin-left: 6.5em;
+//         }
+//     }
+// }
+
+/* 991px or smaller
+-------------------------------------------------- */
+@include bp($max: #{$medium - 1}) {
+	/* gloabl */
+	.main-row {
+		margin-bottom: 1em;
+	}
+
+	.content-blog article {
+		display: block;
+		clear: both;
+		float: left;
+	}
+
+	.content-blog .blog-post-thumbnail {
+		margin-right: 1em;
+		float: left;
+		width: 20%;
+	}
+
+	.content-blog .blog-post-content {
+		width: 75%;
+		display: inline-block;
+	}
+
+	.content-blog .blog-post-content h3 {
+		margin-top: 0;
+	}
+
+	.content-blog .pagination-container {
+		width: 100%;
+		float: right;
+	}
+	/* home page */
+	article.type-post .entry-content img.attachment-post-thumbnail {
+		float: left;
+		clear: none;
+		margin-right: 1em;
+		margin-bottom: 1em;
+	}
+	/* careers */
+	.careers-culture .btn-default-dark {
+		margin-bottom: 20px;
+	}
+}
+
+/* 767px or smaller
+-------------------------------------------------- */
+@include bp($max: #{$small - 1}) {
+	body > .container {
+		padding: 85px 15px 0;
+	}
+	body.archive #primary,
+	body.single #primary {
+		margin-bottom: 2em;
+	}
+	#footer-sidebar-fullwidth-above,
+	#footer-sidebar-fullwidth-below {
+		margin-bottom: 1em;
+	}
+	#main {
+		display: inline-block;
+	}
+	#nav {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.site-main {
+		display: block;
+	}
+	.blog-main {
+		display: table;
+	}
+	.container .text-muted {
+		font-size: 80%;
+	}
+	.well,
+	.footer-sidebar {
+		margin-bottom: 1em;
+	}
+	.hentry {
+	  margin: 0 0 0.5em;
+	}
+	.entry-content {
+		margin-bottom: 2em;
+	}
+	.jumbotron {
+	  padding: 15px;
+	  margin-bottom: 15px;
+	}
+	#content-wrapper .row > div {
+		border: 0 !important;
+	}
+	.centered > div {
+		margin-right: 0 !important;
+	}
+	#menu-primary-menu {
+		float: left !important;
+	}
+}
+
+/* 568px or smaller
+-------------------------------------------------- */
+@include bp($max: 568px) {
+	/* global */
+	article {
+		display: block;
+		clear: both;
+		float: left;
+	}
+	.blog-post-thumbnail {
+		margin-right: 1em;
+		float: left;
+		width: 20%;
+	}
+	.blog-post-content {
+		width: 75%;
+		display: inline-block;
+	}
+	.blog-post-content h3 {
+		margin-top: 0;
+	}
+	.pagination-container {
+		width: 100%;
+		float: right;
+	}
+	article.type-post .entry-content img.attachment-post-thumbnail {
+		float: left;
+		clear: none;
+		margin-right: 1em;
+		margin-bottom: 1em;
+	}
+}
+
+/* 479px or smaller
+-------------------------------------------------- */
+@include bp($max: 479px) {
+	.nav-tabs {
+		border-bottom: 0;
+	}
+
+	.nav-tabs>li {
+		float: none;
+		margin-bottom: 0;
+	}
+
+	.nav-tabs>li.active>a,
+	.nav-tabs>li.active>a:hover,
+	.nav-tabs>li.active>a:focus {
+		color: #555;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-bottom-color: #ddd;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+
+	.nav-tabs>li>a:hover {
+		border-color: #ddd;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+	.menu-item.menu-item-type-post_type.menu-item-object-page{
+		border-style: solid;
+		border-bottom: 1px solid #505261;
+	}
+	#menu-primary-menu {
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+		font-size: 20px;
+	}
+	/* home */
+	.col-md-4.col-md-offset-1 .callout{
+	margin-left: auto;
+	margin-right: auto;
+	width: 61%;
+	}
+	.home-testimonials {
+	background: transparent url('/wp-content/themes/90theme/img/testimonial-photo.png') no-repeat center;
+	}
+}
+
+/* 320px or smaller
+-------------------------------------------------- */
+@include bp($max: 320px) {
+	.navbar-brand {
+		padding: 12px 0 12px 15px;
+	}
+
+	.navbar-brand {
+		width: 70%;
+	}
+
+	.navbar-brand img {
+		width: 70%;
+	}
+
+	.content-blog .blog-post-thumbnail {
+		width: 100%;
+	}
+
+	.content-blog .blog-post-content {
+		width: 100%;
+	}
+
+	.content-blog .blog-post-content h3 {
+		margin-top: 1em;
+	}
+}
+
+// /* 240px or smaller
+// -------------------------------------------------- */
+// @include bp($max: 240px) {
+
+// }
+
+
+
+/*******************************************************************************************
+
+
+
+
+				General Media Queries 
+
+
+
+
+*******************************************************************************************/
+
+
+
+/*******************************************************************************************
+				3000s
+*******************************************************************************************/
+@media only screen and (max-width: 3440px){
+
+}
+/*******************************************************************************************
+				2000s
+*******************************************************************************************/
+@media only screen and (max-width: 2560px){
+
+}
+
+/*******************************************************************************************
+                1900s
+*******************************************************************************************/
+
+/*******************************************************************************************
+                1800s
+*******************************************************************************************/
+
+/*******************************************************************************************
+                1700s
+*******************************************************************************************/
+
+/*******************************************************************************************
+				1600s
+*******************************************************************************************/
+@media only screen and (max-width: 1680px){
+
+}
+
+
+/*******************************************************************************************
+				1400s
+*******************************************************************************************/
+@media only screen and (max-width: 1440px){
+
+}
+
+/*******************************************************************************************
+                1300s
+*******************************************************************************************/
+
+/*******************************************************************************************
+                1200s
+*******************************************************************************************/
+
+/*******************************************************************************************
+                1100s
+*******************************************************************************************/
+
+/*******************************************************************************************
+				1000s
+*******************************************************************************************/
+@media only screen and (max-width: 1024px){
+
+}
+/*******************************************************************************************
+				900s
+*******************************************************************************************/
+
+/*******************************************************************************************
+				800s
+*******************************************************************************************/
+
+/*******************************************************************************************
+				700s
+*******************************************************************************************/
+@media only screen and (max-width: 768px){
+
+}
+
+/*******************************************************************************************
+                600s
+*******************************************************************************************/
+
+/*******************************************************************************************
+				400s
+*******************************************************************************************/
+@media only screen and (max-width: 425px){
+
+}
+
+
+/*******************************************************************************************
+				300s
+*******************************************************************************************/
+@media only screen and (max-width: 375px){
+
+
+}
+
+
+/*******************************************************************************************
+
+
+
+
+				Device Specific Media Queries 
+
+
+
+
+*******************************************************************************************/
+
+
+
+
+
+
+/*******************************************************************************************
+				Desktop HIDPI-X
+*******************************************************************************************/
+@media only screen and (width: 3440px){
+	@media only screen and (height: 1440px){
+
+	}
+}
+
+/*******************************************************************************************
+				iMac Retina 27
+*******************************************************************************************/
+@media only screen and (width: 2560px){
+	@media only screen and (height: 1440px){
+
+	}
+}
+
+/*******************************************************************************************
+				MacBook 12"
+*******************************************************************************************/
+@media only screen and (width: 2304px){
+	@media only screen and (height: 1440px){
+
+	}
+}
+
+
+/*******************************************************************************************
+				Desktop HIDPI
+*******************************************************************************************/
+@media only screen and (width: 1920px){
+	@media only screen and (height: 1080px){
+
+	}
+}
+
+/*******************************************************************************************
+				MacBook Pro Retina 15"
+*******************************************************************************************/
+@media only screen and (width: 1680px){
+	@media only screen and (height: 1050px){
+
+	}
+}
+
+/*******************************************************************************************
+				Desktop MDPI & MacBook Air 13.3"
+*******************************************************************************************/
+@media only screen and (width: 1440px){
+	@media only screen and (height: 900px){
+
+	}
+}
+
+
+
+/*******************************************************************************************
+				Laptop-M
+*******************************************************************************************/
+@media only screen and (width: 1366px){
+	@media only screen and (height: 768px){
+
+	}
+}
+
+/*******************************************************************************************
+				 Laptop-S
+*******************************************************************************************/
+@media only screen and (width: 1280px){
+	@media only screen and (height: 800px){
+
+	}
+}
+
+
+
+/*******************************************************************************************
+				Apple iPad Pro 12.0
+*******************************************************************************************/
+@media only screen and (width: 1024px){
+	@media only screen and (height: 1366px){
+
+	}
+}
+
+
+/*******************************************************************************************
+				Apple iPad Pro 10.5
+*******************************************************************************************/
+@media only screen and (width: 834px){
+	@media only screen and (height: 1112px){
+
+	}
+}
+
+
+
+/*******************************************************************************************
+				AGoogle Nexus 10
+*******************************************************************************************/
+@media only screen and (width: 800px){
+	@media only screen and (height: 1280px){
+
+	}
+}
+
+/*******************************************************************************************
+				Apple iPad & Apple iPad Pro 9.7 & Apple iPad mini 4
+*******************************************************************************************/
+@media only screen and (width: 768px){
+	@media only screen and (height: 1024px){
+
+	}
+}
+
+/*******************************************************************************************
+				Google Nexus 7
+*******************************************************************************************/
+@media only screen and (width: 600px){
+	@media only screen and (height: 960px){
+
+	}
+}
+
+/*******************************************************************************************
+				Apple iPhone XS Max, Apple iPhone XR
+*******************************************************************************************/
+@media only screen and (width: 414px){
+	@media only screen and (height: 896px){
+
+	}
+}
+/*******************************************************************************************
+				Apple iPhone 8+, Apple iPhone 7+, Apple iPhone 6+
+*******************************************************************************************/
+@media only screen and (width: 414px){
+	@media only screen and (height: 736px){
+
+	}
+}
+
+/*******************************************************************************************
+				Apple iPhone XS, Apple iPhone X
+*******************************************************************************************/
+@media only screen and (width: 375px){
+	@media only screen and (height: 812px){
+
+	}
+}
+/*******************************************************************************************
+				Apple iPhone 8, Apple iPhone 7, Apple iPhone 6
+*******************************************************************************************/
+@media only screen and (width: 375px){
+	@media only screen and (height: 667px){
+
+	}
+}
+
+/*******************************************************************************************
+				Google Nexus 4
+*******************************************************************************************/
+@media only screen and (width: 384px){
+	@media only screen and (height: 640px){
+
+	}
+}
+/*******************************************************************************************
+				Samsung Galaxy S9+ & Samsung Galaxy S9 & Samsung Galaxy S8
+*******************************************************************************************/
+@media only screen and (width: 360px){
+	@media only screen and (height: 740px){
+
+	}
+}
+/*******************************************************************************************
+				OnePlus 5T, LG G6, Google Pixel 2 XL
+*******************************************************************************************/
+@media only screen and (width: 360px){
+	@media only screen and (height: 720px){
+
+	}
+}
+/*******************************************************************************************
+				Samsung Galaxy Note 5, Samnsung Galaxy S7, Samsung S6 Edge, Samsung Galaxy S6, Samsung Galaxy S5, Samsung Galaxy S4, Samsung Galaxy S3, LG G3, Google Pixel 2, Google Pixel XL
+*******************************************************************************************/
+@media only screen and (width: 360px){
+	@media only screen and (height: 640px){
+
+	}
+}
+
+/*******************************************************************************************
+				Apple iPhone SE, Apple iPhone 5s
+*******************************************************************************************/
+@media only screen and (width: 320px){
+	@media only screen and (height: 568px){
+
+	}
+}
