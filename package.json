@@ -10,5 +10,9 @@
     "type": "git",
     "url": "?.git"
   },
-  "author": "Paul Birza"
+  "author": "Paul Birza",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-util": "^3.0.8"
+  }
 }
