@@ -18,8 +18,9 @@ var sassSources = [
 // 	gulp.src('components/coffee/tagline.coffee').pipe (coffee({ bare: true})).on('error',gutil.log)
 // });
 
-gulp.task('js', function () {
+gulp.task('js', function (done) {
 	gulp.src(jsSources).pipe(concat('script.js')).pipe(gulp.dest('development/customtheme-master/js'))
+	done();
 });
 
 
@@ -30,3 +31,9 @@ gulp.task('compass', function (done) {
 	})).on('error', gutil.log).pipe(gulp.dest('development/customtheme-master'))
 	done();
 });
+
+
+// gulp.task('all', ['js', 'compass']);
+
+gulp.task('all', gulp.parallel('js', 'compass'));
+
