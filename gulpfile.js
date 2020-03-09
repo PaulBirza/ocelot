@@ -3,20 +3,15 @@ var gulp = require ('gulp'),
 	compass = require ('gulp-compass'), 
 	concat = require('gulp-concat');
 
+	// const { watch } = require('gulp');
+
 var jsSources = [
-'development/customtheme-master/js/bootstrap.min.js','development/customtheme-master/js/main.min.js'
+'development/customtheme-master/js/bootstrap.js','development/customtheme-master/js/main.js'
 ];
 
 var sassSources = [
 'development/customtheme-master/sass/style.scss'];
 
-// gulp.task('log', function () {
-// 	gutil.log('workflow demonstration');
-// });
-
-// gulp.task('coffee', function () {
-// 	gulp.src('components/coffee/tagline.coffee').pipe (coffee({ bare: true})).on('error',gutil.log)
-// });
 
 gulp.task('js', function (done) {
 	gulp.src(jsSources).pipe(concat('script.js')).pipe(gulp.dest('development/customtheme-master/js'))
@@ -33,7 +28,10 @@ gulp.task('compass', function (done) {
 });
 
 
-// gulp.task('all', ['js', 'compass']);
+gulp.task('watch', function() {
+    gulp.watch('development/customtheme-master/sass/partials/*.scss', gulp.series('compass'));
+});
 
-gulp.task('default', gulp.parallel('js', 'compass'));
+
+gulp.task('default', gulp.series('js', 'compass', 'watch'));
 
